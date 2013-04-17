@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'JCSegueUserInfo' target in the 'JCSegueUserInfo' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif
