@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		496597A1171E8DF600EC0853 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597A0171E8DF600EC0853 /* Foundation.framework */; };
-		496597A6171E8DF600EC0853 /* JCSegueUserInfo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 496597A5171E8DF600EC0853 /* JCSegueUserInfo.h */; };
-		496597A8171E8DF600EC0853 /* JCSegueUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 496597A7171E8DF600EC0853 /* JCSegueUserInfo.m */; };
 		496597B0171E8DF700EC0853 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597AF171E8DF700EC0853 /* SenTestingKit.framework */; };
 		496597B2171E8DF700EC0853 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597B1171E8DF700EC0853 /* UIKit.framework */; };
 		496597B3171E8DF700EC0853 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597A0171E8DF600EC0853 /* Foundation.framework */; };
 		496597B6171E8DF700EC0853 /* libJCSegueUserInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4965979D171E8DF600EC0853 /* libJCSegueUserInfo.a */; };
 		496597BC171E8DF700EC0853 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496597BA171E8DF700EC0853 /* InfoPlist.strings */; };
 		496597BF171E8DF700EC0853 /* JCSegueUserInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 496597BE171E8DF700EC0853 /* JCSegueUserInfoTests.m */; };
+		496597CA171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */; };
+		496597CC171E8FEC00EC0853 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496597CB171E8FEC00EC0853 /* Storyboard.storyboard */; };
+		496597CD171E925300EC0853 /* UIViewController+SegueUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				496597A6171E8DF600EC0853 /* JCSegueUserInfo.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,15 +45,15 @@
 		4965979D171E8DF600EC0853 /* libJCSegueUserInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJCSegueUserInfo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		496597A0171E8DF600EC0853 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		496597A4171E8DF600EC0853 /* JCSegueUserInfo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCSegueUserInfo-Prefix.pch"; sourceTree = "<group>"; };
-		496597A5171E8DF600EC0853 /* JCSegueUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSegueUserInfo.h; sourceTree = "<group>"; };
-		496597A7171E8DF600EC0853 /* JCSegueUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSegueUserInfo.m; sourceTree = "<group>"; };
 		496597AE171E8DF700EC0853 /* JCSegueUserInfoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCSegueUserInfoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		496597AF171E8DF700EC0853 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		496597B1171E8DF700EC0853 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		496597B9171E8DF700EC0853 /* JCSegueUserInfoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCSegueUserInfoTests-Info.plist"; sourceTree = "<group>"; };
 		496597BB171E8DF700EC0853 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		496597BD171E8DF700EC0853 /* JCSegueUserInfoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSegueUserInfoTests.h; sourceTree = "<group>"; };
 		496597BE171E8DF700EC0853 /* JCSegueUserInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSegueUserInfoTests.m; sourceTree = "<group>"; };
+		496597C8171E8E2F00EC0853 /* UIViewController+SegueUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueUserInfo.h"; sourceTree = "<group>"; };
+		496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueUserInfo.m"; sourceTree = "<group>"; };
+		496597CB171E8FEC00EC0853 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +111,9 @@
 		496597A2171E8DF600EC0853 /* JCSegueUserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				496597A5171E8DF600EC0853 /* JCSegueUserInfo.h */,
-				496597A7171E8DF600EC0853 /* JCSegueUserInfo.m */,
 				496597A3171E8DF600EC0853 /* Supporting Files */,
+				496597C8171E8E2F00EC0853 /* UIViewController+SegueUserInfo.h */,
+				496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */,
 			);
 			path = JCSegueUserInfo;
 			sourceTree = "<group>";
@@ -129,9 +129,9 @@
 		496597B7171E8DF700EC0853 /* JCSegueUserInfoTests */ = {
 			isa = PBXGroup;
 			children = (
-				496597BD171E8DF700EC0853 /* JCSegueUserInfoTests.h */,
 				496597BE171E8DF700EC0853 /* JCSegueUserInfoTests.m */,
 				496597B8171E8DF700EC0853 /* Supporting Files */,
+				496597CB171E8FEC00EC0853 /* Storyboard.storyboard */,
 			);
 			path = JCSegueUserInfoTests;
 			sourceTree = "<group>";
@@ -217,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496597BC171E8DF700EC0853 /* InfoPlist.strings in Resources */,
+				496597CC171E8FEC00EC0853 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				496597A8171E8DF600EC0853 /* JCSegueUserInfo.m in Sources */,
+				496597CA171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496597BF171E8DF700EC0853 /* JCSegueUserInfoTests.m in Sources */,
+				496597CD171E925300EC0853 /* UIViewController+SegueUserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
