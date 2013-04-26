@@ -17,6 +17,7 @@
 		496597CA171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */; };
 		496597CC171E8FEC00EC0853 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496597CB171E8FEC00EC0853 /* Storyboard.storyboard */; };
 		496597CD171E925300EC0853 /* UIViewController+SegueUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */; };
+		4B226A0075A84799BD6B30E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BF1137DA364045B5D88CAB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		494C6897172A8AE5005D966F /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4965979D171E8DF600EC0853 /* libJCSegueUserInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJCSegueUserInfo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		496597A0171E8DF600EC0853 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		496597A4171E8DF600EC0853 /* JCSegueUserInfo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCSegueUserInfo-Prefix.pch"; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		496597C8171E8E2F00EC0853 /* UIViewController+SegueUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueUserInfo.h"; sourceTree = "<group>"; };
 		496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueUserInfo.m"; sourceTree = "<group>"; };
 		496597CB171E8FEC00EC0853 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		70BF1137DA364045B5D88CAB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEFA22560A9942E39AF0D69C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				496597A1171E8DF600EC0853 /* Foundation.framework in Frameworks */,
+				4B226A0075A84799BD6B30E0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,8 @@
 				496597B7171E8DF700EC0853 /* JCSegueUserInfoTests */,
 				4965979F171E8DF600EC0853 /* Frameworks */,
 				4965979E171E8DF600EC0853 /* Products */,
+				494C6897172A8AE5005D966F /* Podfile */,
+				EEFA22560A9942E39AF0D69C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +111,7 @@
 				496597A0171E8DF600EC0853 /* Foundation.framework */,
 				496597AF171E8DF700EC0853 /* SenTestingKit.framework */,
 				496597B1171E8DF700EC0853 /* UIKit.framework */,
+				70BF1137DA364045B5D88CAB /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 496597C2171E8DF700EC0853 /* Build configuration list for PBXNativeTarget "JCSegueUserInfo" */;
 			buildPhases = (
+				4093641A93714333B7DA70CC /* Check Pods Manifest.lock */,
 				49659799171E8DF600EC0853 /* Sources */,
 				4965979A171E8DF600EC0853 /* Frameworks */,
 				4965979B171E8DF600EC0853 /* CopyFiles */,
+				032137B4130443ED97DD2A11 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +234,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		032137B4130443ED97DD2A11 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		4093641A93714333B7DA70CC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
 		496597AC171E8DF700EC0853 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +343,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -327,6 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -334,11 +374,11 @@
 		};
 		496597C3171E8DF700EC0853 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEFA22560A9942E39AF0D69C /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/JCSegueUserInfo.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCSegueUserInfo/JCSegueUserInfo-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -346,11 +386,11 @@
 		};
 		496597C4171E8DF700EC0853 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEFA22560A9942E39AF0D69C /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/JCSegueUserInfo.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCSegueUserInfo/JCSegueUserInfo-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -358,6 +398,7 @@
 		};
 		496597C6171E8DF700EC0853 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEFA22560A9942E39AF0D69C /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -373,6 +414,7 @@
 		};
 		496597C7171E8DF700EC0853 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEFA22560A9942E39AF0D69C /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -405,6 +447,7 @@
 				496597C4171E8DF700EC0853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496597C5171E8DF700EC0853 /* Build configuration list for PBXNativeTarget "JCSegueUserInfoTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +456,7 @@
 				496597C7171E8DF700EC0853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
