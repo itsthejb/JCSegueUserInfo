@@ -9,6 +9,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <UIKit/UIKit.h>
 #import "UIViewController+SegueUserInfo.h"
+#import "TestPilot.h"
 
 @interface TestViewController : UIViewController
 @property (nonatomic, strong) id testProperty1;
@@ -21,7 +22,8 @@
 
 @interface JCSegueUserInfoTests : SenTestCase
 @property (strong) UIStoryboard *storyboard;
-@property (strong) UIViewController *initialViewController;
+@property (strong) UINavigationController *navController;
+@property (strong) UITableViewController *initialViewController;
 @end
 
 @implementation JCSegueUserInfoTests
@@ -41,10 +43,13 @@
                                                   sender:self
                                                 userInfo:@{ @"testProperty1" : property1, @"testProperty2" : property2 }];
 
-  TestViewController *testVc = (id) self.initialViewController.presentedViewController;
+  TestViewController *testVc = (id) self.navController.topViewController;
+  assertNotNil(testVc);
+  assertThat(testVc, instanceOf([TestViewController class]));
 
-  STAssertNotNil(testVc, @"Didn't instantiate test view controller");
-  STAssertTrue([testVc isKindOfClass:[TestViewController class]], @"Didn't instantiate test view controller");
+  // values
+  assertThat(testVc.testProperty1, equalTo(property1));
+  assertThat(testVc.testProperty2, equalTo(property2));
 }
 
 #pragma mark -
@@ -54,10 +59,15 @@
   [super setUp];
 
   self.storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle bundleForClass:[self class]]];
-  STAssertNotNil(self.storyboard, @"Couldn't load storyboard");
+  assertNotNil(self.storyboard);
 
-  self.initialViewController = [self.storyboard instantiateInitialViewController];
-  STAssertNotNil(self.storyboard, @"Couldn't instantiate initial view controller");
+  self.navController = [self.storyboard instantiateInitialViewController];
+  assertNotNil(self.navController);
+  assertThat(self.navController, instanceOf([UINavigationController class]));
+
+  self.initialViewController = (id) self.navController.topViewController;
+  assertNotNil(self.initialViewController);
+  assertThat(self.initialViewController, instanceOf([UITableViewController class]));
 }
 
 - (void)tearDown
