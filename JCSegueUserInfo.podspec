@@ -10,7 +10,6 @@ Pod::Spec.new do |s|
   s.dependency      'libextobjc/EXTSwizzle', '0.2.5'
   s.dependency      'ObjcAssociatedObjectHelpers', '1.1'
   s.homepage      = 'https://joncrooke@bitbucket.org/joncrooke/jcsegueuserinfo.git'
-  s.license       = 'MIT'
   s.platform      = :ios, '5.0'
   s.requires_arc  = true
   s.source        = {
