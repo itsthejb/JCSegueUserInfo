@@ -8,8 +8,9 @@ Pod::Spec.new do |s|
   s.homepage      = 'https://joncrooke@bitbucket.org/joncrooke/jcsegueuserinfo.git'
   s.license       = 'MIT'
   s.platform      = :ios, '5.0'
+  s.requires_arc  = true
   s.source        = {
-    :git => 'https://github.com/itsthejb/JCSegueUserInfo',
+    :git => 'https://github.com/itsthejb/JCSegueUserInfo.git',
     :tag => "v" + s.version.to_s
   }
   s.source_files = 'JCSegueUserInfo/*.{h,m}'
