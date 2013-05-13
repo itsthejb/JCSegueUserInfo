@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name          = 'JCSegueUserInfo'
   s.version       = '1.0.0'
-  s.summary       = 'UIStoryboardSegues plus user information.'
+  s.summary       = 'Programmatic UIStoryboardSegue - the missing (data) link.'
   s.author        = { 'Jonathan Crooke' => 'joncrooke@gmail.com' }
   s.dependency      'libextobjc/EXTSwizzle', '0.2.5'
   s.dependency      'ObjcAssociatedObjectHelpers', '1.1'
