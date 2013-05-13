@@ -57,6 +57,7 @@
 		496597C8171E8E2F00EC0853 /* UIViewController+SegueUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueUserInfo.h"; sourceTree = "<group>"; };
 		496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueUserInfo.m"; sourceTree = "<group>"; };
 		496597CB171E8FEC00EC0853 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		49DA23E11741676D00AE17C6 /* JCSegueUserInfo.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JCSegueUserInfo.podspec; sourceTree = "<group>"; };
 		5EC88445C90F4C9A8FB20AD1 /* libPods-JCSegueUserInfoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCSegueUserInfoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BF1137DA364045B5D88CAB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB297A40F3FC4E4E9C6CEBCA /* Pods-JCSegueUserInfoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSegueUserInfoTests.xcconfig"; path = "Pods/Pods-JCSegueUserInfoTests.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -95,9 +96,7 @@
 				496597B7171E8DF700EC0853 /* JCSegueUserInfoTests */,
 				4965979F171E8DF600EC0853 /* Frameworks */,
 				4965979E171E8DF600EC0853 /* Products */,
-				494C6897172A8AE5005D966F /* Podfile */,
-				EEFA22560A9942E39AF0D69C /* Pods.xcconfig */,
-				BB297A40F3FC4E4E9C6CEBCA /* Pods-JCSegueUserInfoTests.xcconfig */,
+				49DA23E21741677000AE17C6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +156,17 @@
 				496597BA171E8DF700EC0853 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49DA23E21741677000AE17C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49DA23E11741676D00AE17C6 /* JCSegueUserInfo.podspec */,
+				494C6897172A8AE5005D966F /* Podfile */,
+				EEFA22560A9942E39AF0D69C /* Pods.xcconfig */,
+				BB297A40F3FC4E4E9C6CEBCA /* Pods-JCSegueUserInfoTests.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
