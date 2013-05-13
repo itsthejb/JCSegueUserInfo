@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.dependency      'libextobjc/EXTSwizzle', '0.2.5'
   s.homepage      = 'https://joncrooke@bitbucket.org/joncrooke/jcsegueuserinfo.git'
   s.license       = 'MIT'
-  s.framework     = 'UIKit'
+  s.frameworks    = [ 'UIKit' ]
   s.source = {
     :git => 'https://joncrooke@bitbucket.org/joncrooke/jcsegueuserinfo.git',
     :branch => 'develop'
