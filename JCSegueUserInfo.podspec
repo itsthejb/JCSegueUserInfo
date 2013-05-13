@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   s.author        = { 'Jonathan Crooke' => 'joncrooke@gmail.com' }
   s.dependency      'libextobjc/EXTSwizzle', '0.2.5'
   s.homepage      = 'https://joncrooke@bitbucket.org/joncrooke/jcsegueuserinfo.git'
-  s.license       = 'MIT'
+  s.license       = 'MIT (example)'
   s.platform      = :ios, '5.0'
-  s.source = {
+  s.source        = {
     :git => 'https://joncrooke@bitbucket.org/joncrooke/jcsegueuserinfo.git',
     :branch => 'develop'
   }
