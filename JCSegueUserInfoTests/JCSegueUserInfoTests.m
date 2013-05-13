@@ -52,6 +52,19 @@
   assertThat(testVc.testProperty2, equalTo(property2));
 }
 
+- (void)testNormalMethod
+{
+  [self.initialViewController performSegueWithIdentifier:@"TestSegue1" sender:self];
+
+  TestViewController *testVc = (id) self.navController.topViewController;
+  assertNotNil(testVc);
+  assertThat(testVc, instanceOf([TestViewController class]));
+
+  // values
+  assertThat(testVc.testProperty1, nilValue());
+  assertThat(testVc.testProperty2, nilValue());
+}
+
 #pragma mark -
 
 - (void)setUp
