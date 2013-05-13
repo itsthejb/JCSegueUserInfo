@@ -4,6 +4,7 @@ Pod::Spec.new do |s|
   s.summary       = 'UIStoryboardSegues plus user information.'
   s.author        = { 'Jonathan Crooke' => 'joncrooke@gmail.com' }
   s.dependency      'libextobjc/EXTSwizzle', '0.2.5'
+  s.dependency      'ObjcAssociatedObjectHelpers', '1.1'
   s.homepage      = 'https://joncrooke@bitbucket.org/joncrooke/jcsegueuserinfo.git'
   s.license       = 'MIT'
   s.platform      = :ios, '5.0'

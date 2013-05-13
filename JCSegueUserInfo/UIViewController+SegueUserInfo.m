@@ -6,11 +6,10 @@
 //  Copyright (c) 2013 Jonathan Crooke. All rights reserved.
 //
 
-#import <objc/runtime.h>
 #import "UIViewController+SegueUserInfo.h"
 #import "EXTSwizzle.h"
+#import "ObjcAssociatedObjectHelpers.h"
 
-static void *kSegueUserInfoKey = NULL;
 static BOOL __segue_swizzled = NO;
 
 @interface UIViewController (SegueUserInfoPrivate)
@@ -20,6 +19,8 @@ static BOOL __segue_swizzled = NO;
 @end
 
 @implementation UIViewController (SegueUserInfo)
+
+SYNTHESIZE_ASC_OBJ_LAZY(__segueUserInfoDictionary, NSMutableDictionary)
 
 - (void)performSegueWithIdentifier:(NSString *)identifier
                             sender:(id)sender
@@ -45,15 +46,6 @@ static BOOL __segue_swizzled = NO;
     [self.__segueUserInfoDictionary removeObjectForKey:segue.identifier];
   }
   [self __segue_user_info_original_prepareForSegue:segue sender:sender];
-}
-
-- (NSMutableDictionary *)__segueUserInfoDictionary {
-  NSMutableDictionary *dict = objc_getAssociatedObject(self, kSegueUserInfoKey);
-  if (!dict) {
-    dict = @{}.mutableCopy;
-    objc_setAssociatedObject(self, kSegueUserInfoKey, dict, OBJC_ASSOCIATION_RETAIN);
-  }
-  return dict;
 }
 
 @end
