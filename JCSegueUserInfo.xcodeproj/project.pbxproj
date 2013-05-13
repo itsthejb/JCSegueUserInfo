@@ -58,6 +58,7 @@
 		496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueUserInfo.m"; sourceTree = "<group>"; };
 		496597CB171E8FEC00EC0853 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		49DA23E11741676D00AE17C6 /* JCSegueUserInfo.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JCSegueUserInfo.podspec; sourceTree = "<group>"; };
+		49DA24171741770F00AE17C6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		5EC88445C90F4C9A8FB20AD1 /* libPods-JCSegueUserInfoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCSegueUserInfoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BF1137DA364045B5D88CAB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB297A40F3FC4E4E9C6CEBCA /* Pods-JCSegueUserInfoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSegueUserInfoTests.xcconfig"; path = "Pods/Pods-JCSegueUserInfoTests.xcconfig"; sourceTree = SOURCE_ROOT; };
@@ -97,6 +98,7 @@
 				4965979F171E8DF600EC0853 /* Frameworks */,
 				4965979E171E8DF600EC0853 /* Products */,
 				49DA23E21741677000AE17C6 /* Pods */,
+				49DA24171741770F00AE17C6 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,8 +144,8 @@
 		496597B7171E8DF700EC0853 /* JCSegueUserInfoTests */ = {
 			isa = PBXGroup;
 			children = (
-				496597BE171E8DF700EC0853 /* JCSegueUserInfoTests.m */,
 				496597B8171E8DF700EC0853 /* Supporting Files */,
+				496597BE171E8DF700EC0853 /* JCSegueUserInfoTests.m */,
 				496597CB171E8FEC00EC0853 /* Storyboard.storyboard */,
 			);
 			path = JCSegueUserInfoTests;
