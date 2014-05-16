@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/itsthejb/JCSegueUserInfo.svg?branch=master)](https://travis-ci.org/itsthejb/NSURL-QueryDictionary)
+[![Build Status](https://travis-ci.org/itsthejb/JCSegueUserInfo.svg?branch=develop)](https://travis-ci.org/itsthejb/NSURL-QueryDictionary)
+
 #JCSegueUserInfo
 
 Love `UIStoryboard`? Love `UIStoryboardSegue` even more? Hate the way the don't work as closely together as they could do? Try `JCSegueUserInfo`.

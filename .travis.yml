@@ -3,10 +3,13 @@ language: objective-c
 xcode_workspace: JCSegueUserInfo.xcworkspace
 xcode_scheme: JCSegueUserInfo
 
-before_install: 
-    - brew unlink xctool
-    - brew install xctool --HEAD
-    - export LC_ALL="en_US.UTF-8"
-    - gem install cocoapods
+before_script:
+  - export LANG=en_US.UTF-8
 
-script: xctool -workspace JCSegueUserInfo.xcworkspace -scheme JCSegueUserInfo test -sdk iphonesimulator
+before_install: 
+  - brew unlink xctool
+  - brew update
+  - brew install xctool --HEAD
+  - gem install cocoapods
+
+script: xctool -workspace JCSegueUserInfo.xcworkspace -scheme JCSegueUserInfo test -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES clean test
