@@ -1,9 +1,6 @@
 platform :ios
 
-pod 'libextobjc/EXTSwizzle', '0.2.5'
+pod 'JRSwizzle', '1.0'
 pod 'ObjcAssociatedObjectHelpers', '1.1'
 
-target :JCSegueUserInfoTests, :exclusive => true do
-  pod 'TestPilot/Core-iOS', '0.0.5'
-  pod 'TestPilot/Specta', '0.0.5'
-end
+#link_with 'JCSegueUserInfo', 'JCSegueUserInfoTests'
