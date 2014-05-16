@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "496597AD171E8DF700EC0853"
-               BuildableName = "JCSegueUserInfoTests.octest"
+               BuildableName = "JCSegueUserInfoTests.xctest"
                BlueprintName = "JCSegueUserInfoTests"
                ReferencedContainer = "container:JCSegueUserInfo.xcodeproj">
             </BuildableReference>

@@ -7,22 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B9D46E2578C4269A3F61C19 /* libPods-JCSegueUserInfoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC88445C90F4C9A8FB20AD1 /* libPods-JCSegueUserInfoTests.a */; };
+		495F84ED1926ACC00071B4FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492BDFB61926AAFA00A07AA9 /* XCTest.framework */; };
+		495F84EE1926ACC00071B4FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597A0171E8DF600EC0853 /* Foundation.framework */; };
+		495F84EF1926ACC00071B4FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597B1171E8DF700EC0853 /* UIKit.framework */; };
+		495F84F51926ACC00071B4FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 495F84F31926ACC00071B4FA /* InfoPlist.strings */; };
+		495F85001926ACD10071B4FA /* JCSegueUserInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495F84FE1926ACD10071B4FA /* JCSegueUserInfoTests.m */; };
+		495F85011926ACD10071B4FA /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495F84FF1926ACD10071B4FA /* Storyboard.storyboard */; };
 		496597A1171E8DF600EC0853 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597A0171E8DF600EC0853 /* Foundation.framework */; };
-		496597B0171E8DF700EC0853 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597AF171E8DF700EC0853 /* SenTestingKit.framework */; };
-		496597B2171E8DF700EC0853 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597B1171E8DF700EC0853 /* UIKit.framework */; };
-		496597B3171E8DF700EC0853 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496597A0171E8DF600EC0853 /* Foundation.framework */; };
-		496597B6171E8DF700EC0853 /* libJCSegueUserInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4965979D171E8DF600EC0853 /* libJCSegueUserInfo.a */; };
-		496597BC171E8DF700EC0853 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 496597BA171E8DF700EC0853 /* InfoPlist.strings */; };
-		496597BF171E8DF700EC0853 /* JCSegueUserInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 496597BE171E8DF700EC0853 /* JCSegueUserInfoTests.m */; };
 		496597CA171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */; };
-		496597CC171E8FEC00EC0853 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496597CB171E8FEC00EC0853 /* Storyboard.storyboard */; };
-		496597CD171E925300EC0853 /* UIViewController+SegueUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */; };
+		49FD18951926AD990036F8F4 /* libJCSegueUserInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4965979D171E8DF600EC0853 /* libJCSegueUserInfo.a */; };
 		4B226A0075A84799BD6B30E0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BF1137DA364045B5D88CAB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		496597B4171E8DF700EC0853 /* PBXContainerItemProxy */ = {
+		495F84F91926ACC00071B4FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 49659795171E8DF600EC0853 /* Project object */;
 			proxyType = 1;
@@ -44,28 +42,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		492BDFB61926AAFA00A07AA9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		494C6897172A8AE5005D966F /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		495F84EC1926ACC00071B4FA /* JCSegueUserInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCSegueUserInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		495F84F21926ACC00071B4FA /* JCSegueUserInfoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCSegueUserInfoTests-Info.plist"; sourceTree = "<group>"; };
+		495F84F41926ACC00071B4FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		495F84F81926ACC00071B4FA /* JCSegueUserInfoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCSegueUserInfoTests-Prefix.pch"; sourceTree = "<group>"; };
+		495F84FE1926ACD10071B4FA /* JCSegueUserInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSegueUserInfoTests.m; sourceTree = "<group>"; };
+		495F84FF1926ACD10071B4FA /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		4965979D171E8DF600EC0853 /* libJCSegueUserInfo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJCSegueUserInfo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		496597A0171E8DF600EC0853 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		496597A4171E8DF600EC0853 /* JCSegueUserInfo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCSegueUserInfo-Prefix.pch"; sourceTree = "<group>"; };
-		496597AE171E8DF700EC0853 /* JCSegueUserInfoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCSegueUserInfoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		496597AF171E8DF700EC0853 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		496597B1171E8DF700EC0853 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		496597B9171E8DF700EC0853 /* JCSegueUserInfoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCSegueUserInfoTests-Info.plist"; sourceTree = "<group>"; };
-		496597BB171E8DF700EC0853 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		496597BE171E8DF700EC0853 /* JCSegueUserInfoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSegueUserInfoTests.m; sourceTree = "<group>"; };
 		496597C8171E8E2F00EC0853 /* UIViewController+SegueUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueUserInfo.h"; sourceTree = "<group>"; };
 		496597C9171E8E2F00EC0853 /* UIViewController+SegueUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueUserInfo.m"; sourceTree = "<group>"; };
-		496597CB171E8FEC00EC0853 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		49DA23E11741676D00AE17C6 /* JCSegueUserInfo.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JCSegueUserInfo.podspec; sourceTree = "<group>"; };
 		49DA24171741770F00AE17C6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		5EC88445C90F4C9A8FB20AD1 /* libPods-JCSegueUserInfoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JCSegueUserInfoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70BF1137DA364045B5D88CAB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB297A40F3FC4E4E9C6CEBCA /* Pods-JCSegueUserInfoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSegueUserInfoTests.xcconfig"; path = "Pods/Pods-JCSegueUserInfoTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		EEFA22560A9942E39AF0D69C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		495F84E91926ACC00071B4FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49FD18951926AD990036F8F4 /* libJCSegueUserInfo.a in Frameworks */,
+				495F84ED1926ACC00071B4FA /* XCTest.framework in Frameworks */,
+				495F84EF1926ACC00071B4FA /* UIKit.framework in Frameworks */,
+				495F84EE1926ACC00071B4FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4965979A171E8DF600EC0853 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,26 +84,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		496597AA171E8DF700EC0853 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				496597B0171E8DF700EC0853 /* SenTestingKit.framework in Frameworks */,
-				496597B2171E8DF700EC0853 /* UIKit.framework in Frameworks */,
-				496597B3171E8DF700EC0853 /* Foundation.framework in Frameworks */,
-				496597B6171E8DF700EC0853 /* libJCSegueUserInfo.a in Frameworks */,
-				3B9D46E2578C4269A3F61C19 /* libPods-JCSegueUserInfoTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		495F84F01926ACC00071B4FA /* JCSegueUserInfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				495F84FE1926ACD10071B4FA /* JCSegueUserInfoTests.m */,
+				495F84FF1926ACD10071B4FA /* Storyboard.storyboard */,
+				495F84F11926ACC00071B4FA /* Supporting Files */,
+			);
+			path = JCSegueUserInfoTests;
+			sourceTree = "<group>";
+		};
+		495F84F11926ACC00071B4FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				495F84F21926ACC00071B4FA /* JCSegueUserInfoTests-Info.plist */,
+				495F84F31926ACC00071B4FA /* InfoPlist.strings */,
+				495F84F81926ACC00071B4FA /* JCSegueUserInfoTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		49659794171E8DF600EC0853 = {
 			isa = PBXGroup;
 			children = (
 				496597A2171E8DF600EC0853 /* JCSegueUserInfo */,
-				496597B7171E8DF700EC0853 /* JCSegueUserInfoTests */,
+				495F84F01926ACC00071B4FA /* JCSegueUserInfoTests */,
 				4965979F171E8DF600EC0853 /* Frameworks */,
 				4965979E171E8DF600EC0853 /* Products */,
 				49DA23E21741677000AE17C6 /* Pods */,
@@ -106,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				4965979D171E8DF600EC0853 /* libJCSegueUserInfo.a */,
-				496597AE171E8DF700EC0853 /* JCSegueUserInfoTests.octest */,
+				495F84EC1926ACC00071B4FA /* JCSegueUserInfoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,8 +131,8 @@
 		4965979F171E8DF600EC0853 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				492BDFB61926AAFA00A07AA9 /* XCTest.framework */,
 				496597A0171E8DF600EC0853 /* Foundation.framework */,
-				496597AF171E8DF700EC0853 /* SenTestingKit.framework */,
 				496597B1171E8DF700EC0853 /* UIKit.framework */,
 				70BF1137DA364045B5D88CAB /* libPods.a */,
 				5EC88445C90F4C9A8FB20AD1 /* libPods-JCSegueUserInfoTests.a */,
@@ -141,32 +158,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		496597B7171E8DF700EC0853 /* JCSegueUserInfoTests */ = {
-			isa = PBXGroup;
-			children = (
-				496597B8171E8DF700EC0853 /* Supporting Files */,
-				496597BE171E8DF700EC0853 /* JCSegueUserInfoTests.m */,
-				496597CB171E8FEC00EC0853 /* Storyboard.storyboard */,
-			);
-			path = JCSegueUserInfoTests;
-			sourceTree = "<group>";
-		};
-		496597B8171E8DF700EC0853 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				496597B9171E8DF700EC0853 /* JCSegueUserInfoTests-Info.plist */,
-				496597BA171E8DF700EC0853 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		49DA23E21741677000AE17C6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				49DA23E11741676D00AE17C6 /* JCSegueUserInfo.podspec */,
 				494C6897172A8AE5005D966F /* Podfile */,
 				EEFA22560A9942E39AF0D69C /* Pods.xcconfig */,
-				BB297A40F3FC4E4E9C6CEBCA /* Pods-JCSegueUserInfoTests.xcconfig */,
+				49DA23E11741676D00AE17C6 /* JCSegueUserInfo.podspec */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -174,6 +171,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		495F84EB1926ACC00071B4FA /* JCSegueUserInfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 495F84FB1926ACC00071B4FA /* Build configuration list for PBXNativeTarget "JCSegueUserInfoTests" */;
+			buildPhases = (
+				495F84E81926ACC00071B4FA /* Sources */,
+				495F84E91926ACC00071B4FA /* Frameworks */,
+				495F84EA1926ACC00071B4FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				495F84FA1926ACC00071B4FA /* PBXTargetDependency */,
+			);
+			name = JCSegueUserInfoTests;
+			productName = JCSegueUserInfoTests;
+			productReference = 495F84EC1926ACC00071B4FA /* JCSegueUserInfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4965979C171E8DF600EC0853 /* JCSegueUserInfo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 496597C2171E8DF700EC0853 /* Build configuration list for PBXNativeTarget "JCSegueUserInfo" */;
@@ -193,35 +208,20 @@
 			productReference = 4965979D171E8DF600EC0853 /* libJCSegueUserInfo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		496597AD171E8DF700EC0853 /* JCSegueUserInfoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 496597C5171E8DF700EC0853 /* Build configuration list for PBXNativeTarget "JCSegueUserInfoTests" */;
-			buildPhases = (
-				DF76FA56C82B48B087EC4E9A /* Check Pods Manifest.lock */,
-				496597A9171E8DF700EC0853 /* Sources */,
-				496597AA171E8DF700EC0853 /* Frameworks */,
-				496597AB171E8DF700EC0853 /* Resources */,
-				496597AC171E8DF700EC0853 /* ShellScript */,
-				2D265053DE2B4D948DF66E64 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				496597B5171E8DF700EC0853 /* PBXTargetDependency */,
-			);
-			name = JCSegueUserInfoTests;
-			productName = JCSegueUserInfoTests;
-			productReference = 496597AE171E8DF700EC0853 /* JCSegueUserInfoTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		49659795171E8DF600EC0853 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Jonathan Crooke";
+				TargetAttributes = {
+					495F84EB1926ACC00071B4FA = {
+						TestTargetID = 4965979C171E8DF600EC0853;
+					};
+				};
 			};
 			buildConfigurationList = 49659798171E8DF600EC0853 /* Build configuration list for PBXProject "JCSegueUserInfo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -236,18 +236,18 @@
 			projectRoot = "";
 			targets = (
 				4965979C171E8DF600EC0853 /* JCSegueUserInfo */,
-				496597AD171E8DF700EC0853 /* JCSegueUserInfoTests */,
+				495F84EB1926ACC00071B4FA /* JCSegueUserInfoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		496597AB171E8DF700EC0853 /* Resources */ = {
+		495F84EA1926ACC00071B4FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				496597BC171E8DF700EC0853 /* InfoPlist.strings in Resources */,
-				496597CC171E8FEC00EC0853 /* Storyboard.storyboard in Resources */,
+				495F84F51926ACC00071B4FA /* InfoPlist.strings in Resources */,
+				495F85011926ACD10071B4FA /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,48 +268,7 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
-		2D265053DE2B4D948DF66E64 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-JCSegueUserInfoTests-resources.sh\"\n";
-		};
 		4093641A93714333B7DA70CC /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
-		};
-		496597AC171E8DF700EC0853 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		DF76FA56C82B48B087EC4E9A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,6 +285,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		495F84E81926ACC00071B4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495F85001926ACD10071B4FA /* JCSegueUserInfoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49659799171E8DF600EC0853 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,30 +301,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		496597A9171E8DF700EC0853 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				496597BF171E8DF700EC0853 /* JCSegueUserInfoTests.m in Sources */,
-				496597CD171E925300EC0853 /* UIViewController+SegueUserInfo.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		496597B5171E8DF700EC0853 /* PBXTargetDependency */ = {
+		495F84FA1926ACC00071B4FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4965979C171E8DF600EC0853 /* JCSegueUserInfo */;
-			targetProxy = 496597B4171E8DF700EC0853 /* PBXContainerItemProxy */;
+			targetProxy = 495F84F91926ACC00071B4FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		496597BA171E8DF700EC0853 /* InfoPlist.strings */ = {
+		495F84F31926ACC00071B4FA /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				496597BB171E8DF700EC0853 /* en */,
+				495F84F41926ACC00071B4FA /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -365,12 +323,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		495F84FC1926ACC00071B4FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCSegueUserInfoTests/JCSegueUserInfoTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "JCSegueUserInfoTests/JCSegueUserInfoTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		495F84FD1926ACC00071B4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCSegueUserInfoTests/JCSegueUserInfoTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "JCSegueUserInfoTests/JCSegueUserInfoTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		496597C0171E8DF700EC0853 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -402,6 +416,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -444,33 +459,18 @@
 			};
 			name = Release;
 		};
-		496597C6171E8DF700EC0853 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB297A40F3FC4E4E9C6CEBCA /* Pods-JCSegueUserInfoTests.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCSegueUserInfo/JCSegueUserInfo-Prefix.pch";
-				INFOPLIST_FILE = "JCSegueUserInfoTests/JCSegueUserInfoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		496597C7171E8DF700EC0853 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB297A40F3FC4E4E9C6CEBCA /* Pods-JCSegueUserInfoTests.xcconfig */;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCSegueUserInfo/JCSegueUserInfo-Prefix.pch";
-				INFOPLIST_FILE = "JCSegueUserInfoTests/JCSegueUserInfoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		495F84FB1926ACC00071B4FA /* Build configuration list for PBXNativeTarget "JCSegueUserInfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				495F84FC1926ACC00071B4FA /* Debug */,
+				495F84FD1926ACC00071B4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49659798171E8DF600EC0853 /* Build configuration list for PBXProject "JCSegueUserInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -485,15 +485,6 @@
 			buildConfigurations = (
 				496597C3171E8DF700EC0853 /* Debug */,
 				496597C4171E8DF700EC0853 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		496597C5171E8DF700EC0853 /* Build configuration list for PBXNativeTarget "JCSegueUserInfoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				496597C6171E8DF700EC0853 /* Debug */,
-				496597C7171E8DF700EC0853 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
