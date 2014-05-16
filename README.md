@@ -34,6 +34,15 @@ Much better!
 
 `-[UIViewController performSegueWithIdentifier:sender:userInfo:` accepts an `NSDictionary` which is used to set arbitrary properties on the destination view controller instance using the standard `-[NSDictionary setValuesForKeysWithDictionary:]` method. What we do is swizzle the normal `-[UIViewController performSegueWithIdentifier:sender:]` to allow these values to be set on the destination controller if they have be stored using the category method.
 
+#Notes
+
+1. We [swizzle](http://nshipster.com/method-swizzling/) `-[UIViewController performSegueWithIdentifier:sender:]` in order to deliver this feature. If swizzling scares you, then please kindly move along ;)
+2. In order to use this category you cannot override `-[UIViewController performSegueWithIdentifier:identifier:]`. This will no doubt be inconvenient in some situations. Needless to say, this category is not a cure for world hunger, either.
+
+
+
 **Enjoy!**
+
+---
 
 joncrooke@gmail.com
