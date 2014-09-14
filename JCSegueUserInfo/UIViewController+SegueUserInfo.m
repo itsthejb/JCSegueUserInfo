@@ -29,6 +29,19 @@
 
 static BOOL __segue_swizzled = NO;
 
+static inline BOOL __swizzleIfNecessary() {
+  if (!__segue_swizzled) {
+    NSError *error = nil;
+    [UIViewController jr_swizzleMethod:@selector(prepareForSegue:sender:)
+                            withMethod:@selector(__segue_user_info_prepareForSegue:sender:)
+                                 error:&error];
+    NSCAssert(!error, error.localizedDescription);
+    __segue_swizzled = YES;
+    return YES;
+  }
+  return NO;
+}
+
 @interface UIViewController (SegueUserInfoPrivate)
 @property (nonatomic, strong, readonly) NSMutableDictionary *__segueUserInfoDictionary;
 - (void)__segue_user_info_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
@@ -38,20 +51,12 @@ static BOOL __segue_swizzled = NO;
 
 SYNTHESIZE_ASC_OBJ_LAZY(__segueUserInfoDictionary, NSMutableDictionary)
 
-- (void)performSegueWithIdentifier:(NSString *)identifier
-                            sender:(id)sender
-                          userInfo:(NSDictionary *)userInfo
+- (void)jc_performSegueWithIdentifier:(NSString *)identifier
+                               sender:(id)sender
+                             userInfo:(NSDictionary*) userInfo
 {
-  if (!__segue_swizzled) {
-    NSError *error = nil;
-    [UIViewController jr_swizzleMethod:@selector(prepareForSegue:sender:)
-                            withMethod:@selector(__segue_user_info_prepareForSegue:sender:)
-                                 error:&error];
-    NSAssert(!error, error.localizedDescription);
-    __segue_swizzled = YES;
-  }
-
-  [self.__segueUserInfoDictionary setValue:userInfo forKey:identifier];
+  __swizzleIfNecessary();
+  [self jc_setUserInfo:userInfo forSegueWithIdentifier:identifier];
   [self performSegueWithIdentifier:identifier sender:sender];
 }
 
@@ -60,9 +65,21 @@ SYNTHESIZE_ASC_OBJ_LAZY(__segueUserInfoDictionary, NSMutableDictionary)
   NSDictionary *userInfo = [self.__segueUserInfoDictionary valueForKey:segue.identifier];
   if (userInfo) {
     [segue.destinationViewController setValuesForKeysWithDictionary:userInfo];
-    [self.__segueUserInfoDictionary removeObjectForKey:segue.identifier];
   }
   [self __segue_user_info_prepareForSegue:segue sender:sender];
+}
+
+- (void) jc_setUserInfo:(NSDictionary*) userInfo
+ forSegueWithIdentifier:(NSString*) segueIdentifier
+{
+  __swizzleIfNecessary();
+  [self.__segueUserInfoDictionary setObject:userInfo
+                                     forKey:segueIdentifier];
+}
+
+- (void) jc_removeUserForSegueWithIdentifier:(NSString*) segueIdentifier {
+  __swizzleIfNecessary();
+  [self.__segueUserInfoDictionary removeObjectForKey:segueIdentifier];
 }
 
 @end
