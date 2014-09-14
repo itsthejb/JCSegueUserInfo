@@ -27,6 +27,36 @@
 
 @interface UIViewController (SegueUserInfo)
 
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender userInfo:(NSDictionary*) userInfo NS_AVAILABLE_IOS(5_0);
+/**
+ *  Perform segue with identifier, and set keys/values
+ *  on destination view controller using the supplied
+ *  dictionary.
+ *
+ *  @param segueIdentifier  Storyboard segue identifier
+ *  @param sender           Action sender
+ *  @param userInfo         Dictionary of key/value pairs to
+ *  set on the destination view controller.
+ */
+- (void)jc_performSegueWithIdentifier:(NSString *)segueIdentifier
+                               sender:(id)sender
+                             userInfo:(NSDictionary*) userInfo NS_AVAILABLE_IOS(5_0);
+
+/**
+ *  Set a key/value dictionary explicitly for the
+ *  specified segue with identifier.
+ *
+ *  @param userInfo         Dictionary of key/value pairs to
+ *  @param segueIdentifier  Storyboard segue identifier
+ */
+- (void) jc_setUserInfo:(NSDictionary*) userInfo
+ forSegueWithIdentifier:(NSString*) segueIdentifier NS_AVAILABLE_IOS(5_0);
+
+/**
+ *  Remove the key/value dictionary for the specified
+ *  segue identifier.
+ *
+ *  @param segueIdentifier  Storyboard segue identifier
+ */
+- (void) jc_removeUserForSegueWithIdentifier:(NSString*) segueIdentifier NS_AVAILABLE_IOS(5_0);
 
 @end
