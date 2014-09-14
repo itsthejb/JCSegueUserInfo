@@ -38,9 +38,10 @@
   NSString *property1 = @"foo";
   NSString *property2 = @"bar";
 
-  [self.initialViewController performSegueWithIdentifier:@"TestSegue1"
-                                                  sender:self
-                                                userInfo:@{ @"testProperty1" : property1, @"testProperty2" : property2 }];
+  [self.initialViewController jc_performSegueWithIdentifier:@"TestSegue1"
+                                                     sender:self
+                                                   userInfo:@{ @"testProperty1" : property1,
+                                                               @"testProperty2" : property2 }];
 
   TestViewController *testVc = (id) self.navController.topViewController;
   XCTAssertNotNil(testVc, @"");
@@ -64,13 +65,48 @@
   XCTAssertNil(testVc.testProperty2, @"");
 }
 
+- (void)testExplicitSetters
+{
+  NSString *property1 = @"foo";
+  NSString *property2 = @"bar";
+
+  [self.initialViewController jc_setUserInfo:@{ @"testProperty1" : property1,
+                                                @"testProperty2" : property2 }
+                      forSegueWithIdentifier: @"TestSegue1"];
+
+  [self.initialViewController performSegueWithIdentifier:@"TestSegue1"
+                                                  sender:nil];
+
+  TestViewController *testVc = (id) self.navController.topViewController;
+  XCTAssertNotNil(testVc, @"");
+  XCTAssertEqual(testVc.class, [TestViewController class], @"");
+
+  // values
+  XCTAssertEqual(testVc.testProperty1, property1, @"");
+  XCTAssertEqual(testVc.testProperty2, property2, @"");
+
+  // remove values
+  [self.initialViewController jc_removeUserForSegueWithIdentifier:@"TestSegue1"];
+  [self.initialViewController performSegueWithIdentifier:@"TestSegue1"
+                                                  sender:nil];
+
+  testVc = (id) self.navController.topViewController;
+  XCTAssertNotNil(testVc, @"");
+  XCTAssertEqual(testVc.class, [TestViewController class], @"");
+
+  // values
+  XCTAssertNil(testVc.testProperty1, @"");
+  XCTAssertNil(testVc.testProperty2, @"");
+}
+
 #pragma mark -
 
 - (void)setUp
 {
   [super setUp];
 
-  self.storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle bundleForClass:[self class]]];
+  self.storyboard = [UIStoryboard storyboardWithName:@"Storyboard"
+                                              bundle:[NSBundle bundleForClass:[self class]]];
   XCTAssertNotNil(self.storyboard, @"");
 
   self.navController = [self.storyboard instantiateInitialViewController];
